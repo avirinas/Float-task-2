@@ -1,0 +1,105 @@
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko viršutinio border ir h1 spalva:
+    #0974b3
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background: whitesmoke;
+}
+h2{
+    color:#0974b3 ;
+}
+h5{
+    color: grey;
+}
+p{
+    margin-top: 5px;
+    color: #666;
+}
+img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    margin: 10px;
+    float: left;
+}
+
+.page {
+  background-color: whitesmoke;
+  padding: 20px;
+  overflow: auto;
+  padding-bottom: 50px;
+  /* clear: both;   */
+  }  /* Light blue */
+ 
+.page .column{
+    display: inline-block;
+    width: 25%;
+    height: 800px;
+    background: white;
+    padding: 20px;
+    margin: 2%;
+    overflow: auto;
+    border-top: 5px solid gray;
+    transition: 0.5s;
+    
+}
+.page .column:hover{
+    border-top: 5px solid #0974b3;
+    transform: translateY(-10px);
+}
+.img-zoom{
+    position: relative;
+}
+ .img-zoom .zoom{
+    position: absolute;
+    top: 80px;
+    right: 290px;
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+    background: black;
+}
+.zoom:hover{
+    opacity:0.5;
+    transform: scale(1.5);
+    
+}
+
+.myButton {
+    margin-left: 100px;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:14px 64px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
